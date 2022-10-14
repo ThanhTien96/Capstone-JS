@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7f7f7;
+    font: 300 13px/18px "Poppins",Helvetica,sans-serif;
+    color: #888;
+    height: 100%;
+    letter-spacing: 0.6px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+/********** HEADER TOP *************/
+.header__top{
+    background: #d8263c;
+    
+}
+.header__top span{
+    color: #fff;
+} 
+.bg__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__feature{
+    display: flex;
+    align-items: center;
+}
+.header__feature span{
+    margin-left: 20px;
+    padding: 10px 0;
+    display: block;
+}
+.header__top .language,.header__top .current,.header__top .account,.wish__list{
+    position: relative;
+    cursor: pointer;
+}
+
+.current__show, .account__show, .language__show{
+    position: absolute;
+    top: -300%;
+    right: -5px;
+    background: #fff;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 5px;
+    transition: all .5s;
+    opacity: 0;
+    z-index: 1000;
+}
+.current__show a, .account__show a, .language__show a{
+    color: #888;
+    transition: all .5s;
+    font-size: 12px;
+    transform: rotate(180deg);
+}
+.current__show li:hover a, .account__show li:hover a, .language__show li:hover a{
+    color: black;
+}
+
+/******* HEADER BODY ********/
+.header__body{
+    background: #f12a43;
+    padding: 25px;
+}
+
+.header__body .phoneCenter{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    border-right: 1px solid rgba(75, 75, 75, 0.333);
+}
+.header__body .phoneCenter p{
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+.header__card{
+    margin-left: 15px;
+}
+.header__card p{
+    margin: 0;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.header__card p span{
+    position: absolute;
+    top: -40%;
+    left: 80%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.header__card p img{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+}
+.header__contact{
+    display: flex;
+    align-items: center;
+}
+.header__body select.form-control.innner-search {
+    border-radius: 0;
+    padding: 8px 60px 8px 10px;
+    font-size: 14px;
+}   
+.header__body select.form-control.innner-search:focus, .header__search .form-control:focus{
+    box-shadow: none;
+    border-color: #ced4da;    
+}
+.header__body .categories{
+    position: relative;
+}
+.header__body .categories i{
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    left: auto;
+    top: 15px;
+    z-index: 9;
+    color: #666;
+}
