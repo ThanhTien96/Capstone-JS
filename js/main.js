@@ -9,7 +9,6 @@
 
  */
 
-
  showHeaderTop = (id1, id2) => {
     let rotateI = document.getElementById(id2);
     rotateI.style.transition = 'all .5s'

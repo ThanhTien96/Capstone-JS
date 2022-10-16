@@ -20,6 +20,9 @@ ul{
 li{
     list-style: none;
 }
+.container{
+    max-width: 1300px;
+}
 
 /********** HEADER TOP *************/
 .header__top{
@@ -142,6 +145,10 @@ li{
     top: 15px;
     z-index: 9;
     color: #666;
+}
+.header__bottom img{
+    display: block;
+    width: 100%;
 }
 
 
