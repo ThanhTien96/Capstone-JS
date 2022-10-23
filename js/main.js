@@ -18,3 +18,71 @@
     tagName.style.opacity = tagName.style.opacity === '0' ? '1' : '0';
     tagName.style.top = tagName.style.top === '-300%' ? '38px' : '-300%';  
  }
+
+ // OWL CAROUSEL
+ $('.banner-carousel').owlCarousel({
+    rewind:true,    
+   margin: 10,
+   responsiveClass: true,
+   dots: false,
+   autoplay: true,
+   autoplayHoverPause: true,
+   responsive: {
+       0: {
+           items: 1,
+           nav: true
+       },
+       600: {
+           items: 1,
+           nav: true
+       },
+       1000: {
+           items: 1,
+           nav: true,
+       }
+   }
+})
+
+// product carousel
+
+$('.product-carousel').owlCarousel({
+    rewind:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3,
+            rows: 2
+        },
+        1000:{
+            items:4,
+            rows: 2
+        }
+    }
+})
+
+
+
+$('.blog-carousel').owlCarousel({
+    rewind:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2,
+            rows: 2
+        },
+        1000:{
+            items:3,
+            rows: 2
+        }
+    }
+})

@@ -151,6 +151,347 @@ li{
     width: 100%;
 }
 
+/* CAROUSEL */
+
+.banner-carousel .owl-next span {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.banner-carousel .owl-prev span{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    transition: all .5s;
+}
+.banner-carousel .owl-nav button span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.banner-carousel.owl-carousel:hover .owl-nav span{
+    opacity: 1;
+}
+.banner-carousel.owl-carousel:hover .owl-prev span{
+    left: 20px;
+}
+.banner-carousel.owl-carousel:hover .owl-next span{
+    right: 20px;
+}
+.banner-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    position: relative;
+}
+
+/****** PRODUCT ********/
+.product__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__title .product__text{
+    display: flex;
+    justify-content: space-around;
+}
+.product__text h5{
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding: 10px 40px 10px 0;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.product__text h5:hover{
+    color: #f12a43;
+}
+.product__text h5.active{
+    color: #f12a43;
+}
+
+/***** PRODUCT ITEM *******/
+.product-carousel{
+    background: #FFF;
+}
+.item__top{
+    position: relative;
+    overflow: hidden;
+}
+.item__img{
+    position: relative;
+    overflow: hidden;
+}
+.item__img img:first-child{
+    transition: all .8s;
+}
+.item__detail:hover .item__img img:first-child{
+    opacity: 0;
+}
+.item__detail:hover .item__img img:last-child{
+    opacity: 1;
+}
+.item__img img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+.item__top .item__saleOff span{
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: #21cb29;
+    color: #fff;
+    text-transform: capitalize;
+}
+.item__top .item__saleOff{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.item__detail:hover .item__saleOff{
+    opacity: 1;
+    transform: translateY(0);
+}
+.item__shop button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    
+    text-align: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    transition: all .5s;
+    display: inline-block;
+}
+.item__shop button:hover{
+    background: #f12a43;
+    color: #fff;
+}
+.item__shop i{
+    font-size: 18px;
+    line-height: 40px;
+}
+.item__shop{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all .5s;
+}
+.item__detail:hover .item__shop{
+    opacity: 1;
+    transform: translateY(0);
+}
+.item__bottom p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    text-transform: capitalize;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.item__bottom .item__rank i{
+    color: #ffbf34;
+    margin-bottom: 10px;
+}
+.item__bottom .item__price span:first-child{
+    margin: 10px 5px 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f12a43;
+}
+.item__price span:last-child{
+    color: #999;
+    text-decoration: line-through;
+    font-size: 16px;
+    line-height: 16px;
+}
+.item__price span b:first-child{
+    margin-right: 3px;
+}
+.item__detail{
+    padding: 10px 15px;
+    background-color: #fff;
+}
+.item__detail:hover{
+    box-shadow: 0 0 3px 1px rgb(0 0 0 / 10%);
+}
+.product-carousel .item{
+    padding: 10px;
+}
+
+
+.product .owl-nav{
+    position: absolute;
+    top: -10%;
+    right: 20px;
+}
+.product__more .owl-nav, .blog.product .owl-nav{
+    top: -18%;
+}
+
+.product .owl-nav span{
+    font-size: 40px;
+    transition: all .5s;
+}
+.product .owl-nav button.owl-prev{
+    border-right: 1px solid #bfbfbf;
+    
+}
+.product .owl-carousel  .owl-nav button{
+    margin: 0;
+    padding: 0 10px !important;
+    border-radius: 0;
+
+}
+.product .owl-theme .owl-nav [class*='owl-']:hover{
+    background-color: transparent;
+    opacity: 1;
+    color: #333;
+}
+
+
+
+/********** SUB BANNER ************/
+
+.sub__banner{
+    background-color: #fff;
+    padding: 15px;
+}
+.sub__banner a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.sub__banner a::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -85%;
+    z-index: 20;
+    transition: all .5s ease-out;
+    opacity: 0  ;
+}
+.sub__item a:hover::before{
+    left: 100%;
+    opacity: 1;
+} 
+
+
+/****** PRODUCT MORE *********/
+.product__more .product .owl-nav {
+    position: absolute;
+    top: -17%;
+    right: 20px;
+}
+
+
+/*********** BLOG **************/
+.product__item .blog-carousel{
+    background-color: #fff;
+}
+.product__item .blog-item{
+    padding: 15px;
+} 
+
+.blog-item .blog-item-top{
+    position: relative;
+    overflow: hidden;
+}
+.blog-item .blog-item-top .blog-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blog-item-top .blog-icon i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    transform: scale(1.6);
+    opacity: 0;
+    z-index: 30;
+    transition: all .6s;
+}
+.blog-item .blog-item-top .blog-icon i:hover{
+    background: #f12a43;
+    border-color: #f12a43;
+}
+.blog-item:hover .blog-icon i{
+    opacity: 1;
+    transform: scale(1);
+}
+.blog-item-bottom h5 a{
+    color: #333333;
+    font-size: 16px;
+}
+.blog-btn a{
+    color: #f12a43;
+    transition: all .4s;
+}
+.blog-btn a:hover{
+    color: #333333;
+}
+.blog-item-top .blog-hover{
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    position: absolute;
+    top: 0;
+    transition: all .5s;
+}
+.blog-item:hover .blog-item-top .blog-hover{
+    opacity: 1;
+}
+
+/************ LOGO ICON **************/
+
+.logo-icon .owl-nav{
+    top: -28%;
+}
+.logo-icon .product-carousel{
+    padding: 15px;
+}
+.logo-icon .product__item .item{
+    padding: 15px;
+}
+
+
+
+
 
 
 
