@@ -67,6 +67,8 @@ $('.product-carousel').owlCarousel({
 
 
 
+
+
 $('.blog-carousel').owlCarousel({
     rewind:true,
     margin:10,
