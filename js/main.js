@@ -88,3 +88,4 @@ $('.blog-carousel').owlCarousel({
         }
     }
 })
+
