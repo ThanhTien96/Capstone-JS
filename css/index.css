@@ -384,12 +384,12 @@ li{
 
 /*********** PORTFOLIO ************/
 .portfolio{
-    background: #fff;
-    padding: 20px;
+    padding: 10px;
+    background-color: #fff;
     
 }
 .portfolio .item__detail{
-    width: 200px;
+    margin: 5px 5px;
 }
 
 
